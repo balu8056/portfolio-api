@@ -4,6 +4,7 @@
   "description": "RestAPI for portfolio",
   "main": "app.ts",
   "scripts": {
+    "start": "node app.ts",
     "dev": "nodemon app.ts"
   },
   "author": "Bala",
