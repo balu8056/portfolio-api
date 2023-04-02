@@ -2,11 +2,10 @@
   "name": "portfolio-api",
   "version": "1.0.0",
   "description": "RestAPI for portfolio",
-  "main": "app.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+    "start": "node index.js"
   },
   "author": "Bala",
   "license": "ISC",
@@ -15,7 +14,6 @@
     "express": "^4.18.2"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22",
-    "typescript": "^5.0.3"
+    "nodemon": "^2.0.22"
   }
 }
