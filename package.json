@@ -2,10 +2,10 @@
   "name": "portfolio-api",
   "version": "1.0.0",
   "description": "RestAPI for portfolio",
-  "main": "app.ts",
+  "main": "index.ts",
   "scripts": {
-    "start": "node app.ts",
-    "dev": "nodemon app.ts"
+    "start": "node index.ts",
+    "dev": "nodemon index.ts"
   },
   "author": "Bala",
   "license": "ISC",
