@@ -13,6 +13,7 @@ const BlogModel = new Schema(
     desc: { type: String },
     content: { type: String },
     author: { type: String },
+    authorImg: { type: String },
     writtenOn: { type: String },
   },
   { timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' }, versionKey: false }

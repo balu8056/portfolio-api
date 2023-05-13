@@ -51,6 +51,7 @@ export interface BlogType {
   desc: string
   content: string
   author: string
+  authorImg: string
   writtenOn: string
 }
 export interface BlogTypeModelType extends BlogType, Document {}
