@@ -1,5 +1,5 @@
 import { Request, Response } from 'express'
-import BlogModel from 'src/models/BlogModel'
+import BlogModel from '../models/BlogModel'
 
 const getBlogs = (req: Request, res: Response) => {
   try {

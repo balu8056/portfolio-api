@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from 'express'
-import InfoModel from 'src/models/InfoModel'
+import InfoModel from '../models/InfoModel'
 
 const getInfo = (req: Request, res: Response) => {
   try {

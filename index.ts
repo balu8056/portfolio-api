@@ -4,10 +4,10 @@ import bodyParser from 'body-parser'
 import cors from 'cors'
 import helmet from 'helmet'
 import mongoose from 'mongoose'
-import InfoRouter from 'src/routes/InfoRouter'
-import ExperienceRouter from 'src/routes/ExperienceRouter'
-import BlogsRouter from 'src/routes/BlogsRouter'
-import WorksRouter from 'src/routes/WorksRouter'
+import InfoRouter from './src/routes/InfoRouter'
+import ExperienceRouter from './src/routes/ExperienceRouter'
+import BlogsRouter from './src/routes/BlogsRouter'
+import WorksRouter from './src/routes/WorksRouter'
 
 dotenv.config()
 

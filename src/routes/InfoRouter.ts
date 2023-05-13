@@ -1,5 +1,5 @@
 import { Router } from 'express'
-import InfoController from 'src/controller/InfoController'
+import InfoController from '../controller/InfoController'
 
 const InfoRouter: Router = Router()
 

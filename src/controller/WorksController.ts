@@ -1,5 +1,5 @@
 import { Request, Response } from 'express'
-import WorkModel from 'src/models/WorkModel'
+import WorkModel from '../models/WorkModel'
 
 const getWorks = (req: Request, res: Response) => {
   try {

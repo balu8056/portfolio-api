@@ -1,6 +1,6 @@
 import mongoose, { Schema } from 'mongoose'
-import { BlogTypeModelType } from 'src/helpers/interfaces'
-import { BLOGS_COLLECTION_NAME } from 'src/helpers/contants'
+import { BlogTypeModelType } from '../helpers/interfaces'
+import { BLOGS_COLLECTION_NAME } from '../helpers/contants'
 
 const BlogModel = new Schema(
   {

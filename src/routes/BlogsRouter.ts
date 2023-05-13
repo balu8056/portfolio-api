@@ -1,5 +1,5 @@
 import { Router } from 'express'
-import BlogsController from 'src/controller/BlogsController'
+import BlogsController from '../controller/BlogsController'
 
 const BlogsRouter: Router = Router()
 

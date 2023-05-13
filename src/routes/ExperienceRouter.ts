@@ -1,5 +1,5 @@
 import { Router } from 'express'
-import ExperienceController from 'src/controller/ExperienceController'
+import ExperienceController from '../controller/ExperienceController'
 
 const ExperienceRouter: Router = Router()
 

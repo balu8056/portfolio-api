@@ -1,5 +1,5 @@
 import { Request, Response } from 'express'
-import ExperienceModel from 'src/models/ExperienceModel'
+import ExperienceModel from '../models/ExperienceModel'
 
 const getExperience = (req: Request, res: Response) => {
   try {

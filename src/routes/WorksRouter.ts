@@ -1,5 +1,5 @@
 import { Router } from 'express'
-import WorksController from 'src/controller/WorksController'
+import WorksController from '../controller/WorksController'
 
 const WorksRouter: Router = Router()
 
