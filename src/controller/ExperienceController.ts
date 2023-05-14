@@ -15,12 +15,29 @@ const getExperience = (req: Request, res: Response) => {
   }
 }
 
-const getExperiencesById = (req: Request, res: Response) => {
-  const id = req.params.id
+const getExpsByInfoId = (req: Request, res: Response) => {
+  const infoId = req.params.infoId
+
   try {
-    ExperienceModel.findById(id)
+    ExperienceModel.find({ infoId: infoId })
       .then((exps) => {
         return res.status(200).json(exps)
+      })
+      .catch((err) => {
+        return res.status(400).json(err)
+      })
+  } catch (err) {
+    return res.status(500).json(err)
+  }
+}
+
+const getExpById = (req: Request, res: Response) => {
+  const id = req.params.id
+
+  try {
+    ExperienceModel.findById(id)
+      .then((exp) => {
+        return res.status(200).json(exp)
       })
       .catch((err) => {
         return res.status(400).json(err)
@@ -96,4 +113,5 @@ const deleteExperience = (req: Request, res: Response) => {
     return res.status(500).json(err)
   }
 }
-export default { getExperience, getExperiencesById, createExperience, updateExperience, deleteExperience }
+
+export default { getExperience, getExpsByInfoId, getExpById, createExperience, updateExperience, deleteExperience }

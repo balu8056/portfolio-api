@@ -113,4 +113,5 @@ const deleteBlog = (req: Request, res: Response) => {
     return res.status(500).json(err)
   }
 }
+
 export default { getAllBlogs, getBlogsByInfoId, getBlogById, createBlog, updateBlog, deleteBlog }

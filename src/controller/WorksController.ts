@@ -15,6 +15,22 @@ const getWorks = (req: Request, res: Response) => {
   }
 }
 
+const getWorksByInfoId = (req: Request, res: Response) => {
+  const infoId = req.params.infoId
+
+  try {
+    WorkModel.find({ infoId: infoId })
+      .then((works) => {
+        return res.status(200).json(works)
+      })
+      .catch((err) => {
+        return res.status(400).json(err)
+      })
+  } catch (err) {
+    return res.status(500).json(err)
+  }
+}
+
 const getWorkById = (req: Request, res: Response) => {
   const id = req.params.id
 
@@ -98,4 +114,4 @@ const deleteWork = (req: Request, res: Response) => {
   }
 }
 
-export default { getWorks, getWorkById, createWork, updateWork, deleteWork }
+export default { getWorks, getWorkById, getWorksByInfoId, createWork, updateWork, deleteWork }
