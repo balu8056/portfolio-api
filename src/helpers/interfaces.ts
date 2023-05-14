@@ -38,6 +38,7 @@ export interface WorkModelType extends WorkType, Document {}
 export interface ExperienceType {
   infoId: string
   companyName: string
+  companyLogo: string
   from: string
   to: string
   designation: string

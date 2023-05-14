@@ -9,6 +9,7 @@ const ExperienceModel = new Schema(
       ref: 'infos',
     },
     companyName: { type: String },
+    companyLogo: {type: String},
     from: { type: String },
     to: { type: String },
     designation: { type: String },
