@@ -8,6 +8,7 @@ import InfoRouter from './src/routes/InfoRouter'
 import ExperienceRouter from './src/routes/ExperienceRouter'
 import BlogsRouter from './src/routes/BlogsRouter'
 import WorksRouter from './src/routes/WorksRouter'
+import SendEmailRouter from './src/routes/SendEmailRouter'
 
 dotenv.config()
 
@@ -41,6 +42,7 @@ app.use('/info', InfoRouter)
 app.use('/experience', ExperienceRouter)
 app.use('/blogs', BlogsRouter)
 app.use('/works', WorksRouter)
+app.use('/sendEmail', SendEmailRouter)
 
 mongoose
   .connect(
